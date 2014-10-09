@@ -38,7 +38,7 @@ if not os.path.exists(sys.argv[1]):
     print "\nERRORE: la directory specificata non esiste"
     sys.exit()
 
-elenco = glob.glob(os.path.join(sys.argv[1],"*.pdf"))
+elenco = glob.glob(os.path.join(sys.argv[1], "*.pdf"))
 print "Numero di file pdf nella cartella: " + str(len(elenco))
 
 of = file(os.path.join(sys.argv[1], "index.txt"), "w")
